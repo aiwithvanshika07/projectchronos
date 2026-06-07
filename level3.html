@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Level 3 - Timeline Puzzle</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body style="background:black;color:#00ffcc;font-family:monospace;text-align:center;padding-top:50px;">
+<body>
+
+<div class="container">
 
 <h1>LEVEL 3</h1>
 
@@ -30,13 +35,14 @@ placeholder="Enter Year">
 RESTORE TIMELINE
 </button>
 
+</div>
+
 <script>
 
 function checkYear(){
 
 let year =
-document.getElementById("year")
-.value;
+document.getElementById("year").value;
 
 if(year=="2047"){
 
@@ -52,9 +58,7 @@ localStorage.setItem(
 "completed"
 );
 
-alert(
-"Timeline Restored!\n+200 XP"
-);
+alert("Timeline Restored! +200 XP");
 
 window.location.href =
 "level4.html";
@@ -63,7 +67,7 @@ window.location.href =
 else{
 
 alert(
-"Incorrect year.\nSearch the first clue again."
+"Incorrect year. Search the first clue again."
 );
 
 }
@@ -71,6 +75,8 @@ alert(
 }
 
 </script>
+
+<script src="js/game.js"></script>
 
 </body>
 </html>
