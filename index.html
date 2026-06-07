@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 1 - Transmission</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Hidden Clue -->
+<!-- FIRST CLUE = 2047 -->
+
+<div class="container">
+
+<h1>LEVEL 1</h1>
+
+<div class="terminal">
+
+<p class="typing">
+Incoming Transmission From Year 2095...
+</p>
+
+<br>
+
+<p>
+If you are reading this message,
+the timeline has already begun collapsing.
+</p>
+
+<p>
+The first key to saving the future
+is hidden in this page.
+</p>
+
+<p>
+Find the year.
+Remember it.
+You will need it later.
+</p>
+
+<br>
+
+<button onclick="completeLevel()">
+MISSION COMPLETE
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function completeLevel(){
+
+localStorage.setItem("level1","completed");
+
+let xp =
+Number(localStorage.getItem("xp")) || 0;
+
+xp += 100;
+
+localStorage.setItem("xp",xp);
+
+alert(
+"Level 1 Complete!\n\n+100 XP"
+);
+
+window.location.href="level2.html";
+
+}
+
+</script>
+
+</body>
+  </html>
