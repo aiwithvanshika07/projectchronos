@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 2 - Cipher</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>LEVEL 2</h1>
+
+<div class="terminal">
+
+<p>
+Transmission recovered...
+</p>
+
+<p>
+The scientist left an encrypted keyword.
+</p>
+
+<h2>FKURQRV</h2>
+
+<p>
+Hint: Each letter has been shifted by 3 positions.
+</p>
+
+<input
+type="text"
+id="answer"
+placeholder="Enter decoded word">
+
+<br><br>
+
+<button onclick="checkAnswer()">
+DECODE
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function checkAnswer(){
+
+let answer =
+document.getElementById("answer")
+.value
+.trim()
+.toUpperCase();
+
+if(answer==="CHRONOS"){
+
+let xp =
+Number(localStorage.getItem("xp")) || 0;
+
+xp += 150;
+
+localStorage.setItem("xp",xp);
+
+localStorage.setItem(
+"level2",
+"completed"
+);
+
+alert(
+"Correct!\n\n+150 XP"
+);
+
+window.location.href =
+"level3.html";
+
+}
+else{
+
+alert(
+"Incorrect code. Try again."
+);
+
+}
+
+}
+
+</script>
+
+</body>
+  </html>
