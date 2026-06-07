@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Chronos Complete</title>
+</head>
+
+<body style="background:black;color:#00ffcc;font-family:monospace;text-align:center;padding-top:50px;">
+
+<h1>PROJECT CHRONOS</h1>
+
+<h2>TIMELINE SAVED</h2>
+
+<p>
+Congratulations Agent.
+</p>
+
+<p>
+You prevented the collapse of the timeline.
+</p>
+
+<p>
+The future of humanity is secure.
+</p>
+
+<hr style="width:60%;">
+
+<h3 id="xp"></h3>
+
+<p>
+SECRET MESSAGE:
+</p>
+
+<p>
+"The person who saved the future was always part of the timeline."
+</p>
+
+<script>
+
+let xp =
+localStorage.getItem("xp") || 0;
+
+document.getElementById("xp")
+.innerHTML =
+"TOTAL XP : " + xp;
+
+</script>
+
+</body>
+</html>
