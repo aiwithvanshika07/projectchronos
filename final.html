@@ -4,9 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Project Chronos Complete</title>
-</head>
 
-<body style="background:black;color:#00ffcc;font-family:monospace;text-align:center;padding-top:50px;">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
 
 <h1>PROJECT CHRONOS</h1>
 
@@ -24,8 +28,6 @@ You prevented the collapse of the timeline.
 The future of humanity is secure.
 </p>
 
-<hr style="width:60%;">
-
 <h3 id="xp"></h3>
 
 <p>
@@ -35,6 +37,12 @@ SECRET MESSAGE:
 <p>
 "The person who saved the future was always part of the timeline."
 </p>
+
+<button onclick="resetGame()">
+PLAY AGAIN
+</button>
+
+</div>
 
 <script>
 
@@ -46,6 +54,8 @@ document.getElementById("xp")
 "TOTAL XP : " + xp;
 
 </script>
+
+<script src="js/game.js"></script>
 
 </body>
 </html>
